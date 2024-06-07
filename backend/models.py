@@ -16,7 +16,7 @@ class PyObjectId(ObjectId):
 
 
 class Task(BaseModel):
-    id: Optional[PyObjectId] = Field(alias='_id')
+    id: Optional[str] = None
     title: str
     description: Optional[str] = None
     completed: bool = False
